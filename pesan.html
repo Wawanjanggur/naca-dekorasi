@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesan Layanan - Naca Dekorasi</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { max-width: 500px; margin: auto; }
+    input, textarea, select, button {
+      width: 100%; padding: 10px; margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Pemesanan Layanan</h2>
+ <form action="https://formspree.io/f/mvgqkggw" method="POST">
+  <label for="nama">Nama Lengkap:</label><br>
+  <input type="text" id="nama" name="nama" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="telepon">Nomor Telepon:</label><br>
+  <input type="text" id="telepon" name="telepon" required><br><br>
+
+  <label for="layanan">Layanan yang Dipilih:</label><br>
+  <select id="layanan" name="layanan" required>
+    <option value="">--Pilih Layanan--</option>
+    <option value="Dekorasi">Dekorasi</option>
+    <option value="Make Up">Make Up</option>
+    <option value="Sewa Baju Pengantin">Sewa Baju Pengantin</option>
+  </select><br><br>
+
+  <label for="tanggal">Tanggal Acara:</label><br>
+  <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+  <label for="pesan">Pesan Tambahan:</label><br>
+  <textarea id="pesan" name="pesan" rows="4" cols="40"></textarea><br><br>
+
+  <button type="submit">Kirim Pesanan</button>
+</form>
+
+</body>
+</html>
